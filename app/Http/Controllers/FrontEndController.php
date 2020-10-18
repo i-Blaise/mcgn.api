@@ -41,14 +41,14 @@ class FrontEndController extends Controller
 
         if($volunteer->save()){
             // return response()->json(['status' => 'Success', 'message' => 'Message Sent']);
-            return redirect('http://localhost/mcgn-backend/mcgn-frontend/index.php?status=volunteer_saved');
+            return redirect('http://massivecheefulgivingnetwork.com/index.php?status=volunteer_saved');
            }else{
             // return response()->json(['status' => 'failed', 'message' => 'Could not send message']);
-            return redirect('http://localhost/mcgn-backend/mcgn-frontend/index.php?status=not_saved');
+            return redirect('http://massivecheefulgivingnetwork.com/index.php?status=not_saved');
            }
         }else{
             // return response()->json(['status' => 'failed', 'message' => 'Not submitted']);
-            return redirect('http://localhost/mcgn-backend/mcgn-frontend/index.php?status=not_submitted');
+            return redirect('http://massivecheefulgivingnetwork.com/index.php?status=not_submitted');
            }
     }
 
@@ -92,12 +92,12 @@ class FrontEndController extends Controller
 
         if($contact->save()){
             // return response()->json(['status' => 'Success', 'message' => 'Message Sent']);
-            return redirect('http://localhost/mcgn-backend/mcgn-frontend/contact.php?status=message_sent');
+            return redirect('http://massivecheefulgivingnetwork.com/contact.php?status=message_sent');
            }else{
-            return response()->json(['status' => 'failed', 'message' => 'Could not send message']);
+            return response()->json(['http://massivecheefulgivingnetwork.com/contact.php?status=not saved']);
            }
         }else{
-            return response()->json(['status' => 'failed', 'message' => 'Not submitted']);
+            return response()->json(['http://massivecheefulgivingnetwork.com/contact.php?status=not submitted']);
            }
     }
 
