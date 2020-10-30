@@ -162,7 +162,7 @@ class BackEndController extends Controller
     {
         Donations::orderBy('created_at', 'desc')
         ->first()->delete();
-        return redirect('http://localhost/mcgn-backend/dashboard/add_donor.php?status=delete');
+        return redirect('http://massivecheerfulgivingnetwork.com/mcgn-dashboard/dashboard/add_donor.php?status=delete');
     }
     
     public function getCauseName()
