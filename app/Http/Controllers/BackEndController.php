@@ -164,6 +164,13 @@ class BackEndController extends Controller
         ->first()->delete();
         return redirect('http://massivecheerfulgivingnetwork.com/mcgn-dashboard/dashboard/add_donor.php?status=delete');
     }
+
+    public function deleteRecentCause()
+    {
+        Causes::orderBy('created_at', 'desc')
+        ->first()->delete();
+        return redirect('http://massivecheerfulgivingnetwork.com/mcgn-dashboard/dashboard/add_causes.php?status=delete');
+    }
     
     public function getCauseName()
     {

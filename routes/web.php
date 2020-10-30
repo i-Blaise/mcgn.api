@@ -43,6 +43,7 @@ $router->group(['prefix'=>'mcgn-be/v1'], function() use($router){
     $router->post('/addDonor', 'BackEndController@addDonor');
     $router->get('/recentDonor', 'BackEndController@recentDonor');
     $router->get('/deleteRecentDonor', 'BackEndController@deleteRecentDonor');
+    $router->get('/deleteRecentCause', 'BackEndController@deleteRecentCause');
     $router->get('/getCauseName', 'BackEndController@getCauseName');
     $router->post('/test', 'BackEndController@testt');
     $router->get('/cashDonatedToCause/{id}', 'BackEndController@cashDonatedToCause');
